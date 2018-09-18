@@ -2,18 +2,71 @@
 <html>
 
 <head>
-    <title>Paoge Moua</title>
+<title>Paoge Moua</title>
+<meta name="viewport" 
+    content="width=device-width, initial-scale=1">
+
+<style>
+    #aboutme {
+    position: relative;
+    left: 300px;
+    border: none;
+}
+
+/* Three image containers (use 25% for four, 
+and 50% for two, 33.33% for three etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+</style>
+
 </head>
 
 <body>
     <header>Paoge Moua</header>
 
-    <h2>Portfolio</h2>
+<div id="aboutme"
+style="background-color:#fff; 
+outline: 1px solid gray;
+width: 650px; height: 650px; padding: 25px; 
+margin: 0px;">
 
-    <div>Hangman</div>
-    <div>RPG Game</div>
-    <div>Trivia Game</div>
-    <div>Rutgers Info Widget</div>
-    <div>Rock Paper Scissors</div>
+    <h2 style="color:#4aaaa5">Portfolio</h2>
+
+    <div><img src="" alt="hangman" 
+        style="width:200px; height:145; margin-left:460px;">
+        Hangman
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="img_snow.jpg" alt="hangman" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img_forest.jpg" alt="RPG" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img_mountains.jpg" alt="trivia_game" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img_snow.jpg" alt="rutgersinfo_widget" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img_forest.jpg" alt="rockpaperscissors" style="width:100%">
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>

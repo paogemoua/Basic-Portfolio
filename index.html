@@ -12,23 +12,128 @@ img {
     float: left;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.vl {
+    border-right: 6px solid #dddddd;
+    height: 35px;
+    padding: 5px;
+}
+
+#contact {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+#aboutme {
+    position: relative;
+    left: 300px;
+    border: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #4aaaa5;
+    float: right;
+    width: auto;
+    border: 3px solid #4aaaa5;
+    padding: auto;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 10%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
 </style>
 
 </head>
 
 <body>
 
-<header>Paoge Moua</header>
+<header id="header"
+style="background-color:#4aaaaf; color:#ffffff; 
+outline: none;
+width: 250px; height: 100px; padding: 25px; 
+margin: 25px; font-weight: bold; font-size: 30px"; 
+text-align: center;>
+    Paoge Moua
+</header>
 
-<div id="contact"
+<div class="vl" 
+    style="background-color:#4aaaaf; color:#ffffff; 
+    outline: none; border: none;
+    width: auto; height: 90px; padding: 35px; 
+    margin: 25px;">
+    About
+    Portfolio
+    Contact
+</div>
+
+<div id="aboutme"
 style="background-color:#fff; color:#777777; 
 outline: 1px solid gray;
-width: 800px; height: 500px; padding: 25px; 
-margin: 25px;">
+width: 1000px; height: 500px; padding: 25px; 
+margin: 0px;">
 
 <h2>About Me</h2>
-    <p><img scr="" alt="Me" style="width:200px;height:150px;
-    margin-right:15px;">
+    
+    <hr>
+
+    <p><img src="Heihei_moana.jpg" alt="Me" style="width:150px;
+    height:200px;margin-right:15px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Cras posuere finibus mauris, porttitor vestibulum felis commodo in. 
         Nunc porta mauris augue, sit amet pretium massa pellentesque et. 

@@ -2,13 +2,44 @@
 <html>
 
 <head>
-    <header>Contact</header>
+    <title>Paoge Moua</title>
+    
 </head>
 
-<body>
-    <div>Name</div>
-    <div>Email</div>
-    <div>Message</div>
-<footer>Copyright</footer>
+<body bgcolor="#dddddd">
+    <div id="boxed" 
+    style="background-color: #4aaaa5;
+    color:#fff;
+    border: 1px solid green;
+    width: 300px; height: 100px; 
+    border: none; font-size: 200%; text-align: center; 
+    vertical-align:middle; line-height: 90px; ">
+        <strong>Paoge Moua</strong>
+    </div>
+
+    <div id="contact"
+        style="background-color:#fff; color:#4aaaa5;
+        width: 300px; height: 100px; padding: 25px; 
+        margin: 25px;">
+            Contact
+
+        <form action="/action_page.php">
+            Name<br>
+            <input type="text" name="name" value="John Doe"
+            size="100"><br><br>
+            Email<br>
+            <input type="text" name="email" 
+            value="example@gmail.com" size="100"><br><br>
+            Message<br>
+            <input type="text" name="message" size="100" 
+            style=height:250px; width:220px;><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<footer style="text-align: center; font-size: x-small;">
+    Copyright ©
+</footer>
+
 </body>
 </html>

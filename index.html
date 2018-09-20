@@ -19,33 +19,44 @@ body {
 h2 {
     color:#4aaaa5;
     font-family: 'Georgia', Times, "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /* Styling for horizontal line in main content box */
 hr {
-    style="color: #dddddd; background-color: #dddddd;
-    height: 3px; border: none;"
+    color: #dddddd; background-color: #dddddd;
+    height: 3px; border: none;
 }
 
 /* Styling for personal image */ 
 img {
     float: left;
+    width:150px;
+    height:200px;margin-right:15px;
+}
+
+p {
+    font-size: large;
+    line-height: 1.6;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/* Styling for About Me heading in box */
+/* Styling for About Me box */
 #aboutme {
     position: fixed;
     left: 300px;
-    top: 50px;
+    top: 150px;
     border: none;
+    background-color:#fff; color:#777777; 
+    outline: 1px solid gray;
+    width: 1000px; height: 500px; padding: 25px; 
+    margin: 50px; box-align: center"
 }
 
-/* About Portfolio Contact heading bar */
+/* Paoge Moua & About Portfolio Contact heading bar */
 
 .header {
     background-color: #4aaaa5;
@@ -53,13 +64,15 @@ img {
     width: 250px;
     border: none;
     padding: 15px;
-    margin: 5px;
-    height: 60px;
+    margin: 0px;
+    height: 90px;
     font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-size: 25px;
     float: left;
     text-align: center;
-    position: relative;
-    left: 100px;
+    position: fixed;
+    top: 0%;
+    left: 350px;
     z-index: 5;
 }
 
@@ -81,7 +94,7 @@ li a {
     display: inline-block;
     color: #777777;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     font-family: 'Georgia', Times, "Times New Roman", serif;
 }
@@ -134,7 +147,15 @@ li a:hover {
 
 /* ADD POSITION FIXED */
 footer {
-    text-align: center; font-size: x-small;
+    color: white;
+    text-align: center; font-size: small;
+    position: fixed;
+    top: 96%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    z-index: 5;
 }
 
 </style>
@@ -169,21 +190,15 @@ footer {
 
 <!-- About Me section box - ADD FIXED POSITION -->
 
-<div id="aboutme"
-style="background-color:#fff; color:#777777; 
-outline: 1px solid gray;
-width: 1000px; height: 500px; padding: 25px; 
-margin: 50px; box-align: center";>
+<div id="aboutme">
 
 <h2>About Me</h2>
     
     <!-- Styling for horizontal line in main content box -->
-    <hr style="color: #dddddd; background-color: #dddddd;
-    height: 3px; border: none;">
+    <hr>
 
     <!-- Text in About Me section -->
-    <p><img src="Heihei_moana.jpg" alt="Me" style="width:150px;
-    height:200px;margin-right:15px;">
+    <p><img src="Heihei_moana.jpg" alt="Me">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Cras posuere finibus mauris, porttitor vestibulum felis commodo in. 
         Nunc porta mauris augue, sit amet pretium massa pellentesque et. 
@@ -204,31 +219,11 @@ margin: 50px; box-align: center";>
         Curabitur purus odio, tristique eu vehicula id, auctor vitae elit. 
         Sed pellentesque, ipsum vel elementum condimentum, erat elit interdum leo, 
             sit amet faucibus lectus velit a risus. 
-        Suspendisse elementum, mi id eleifend blandit, neque nisl eleifend sapien, 
-            at convallis eros lacus et dolor. 
-        Morbi finibus tincidunt sollicitudin. 
-        Aliquam ac sem dapibus, mattis ex nec, mollis nibh. 
-        Proin vehicula accumsan quam vitae viverra. 
-        Sed scelerisque ultrices tellus, eu pretium magna accumsan vel. 
-        Quisque blandit placerat porta.
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Cras posuere finibus mauris, porttitor vestibulum felis commodo in. 
-        Nunc porta mauris augue, sit amet pretium massa pellentesque et. 
-        Curabitur purus odio, tristique eu vehicula id, auctor vitae elit. 
-        Sed pellentesque, ipsum vel elementum condimentum, erat elit interdum leo, 
-            sit amet faucibus lectus velit a risus. 
-        Suspendisse elementum, mi id eleifend blandit, neque nisl eleifend sapien, 
-            at convallis eros lacus et dolor. 
-        Morbi finibus tincidunt sollicitudin. 
-        Aliquam ac sem dapibus, mattis ex nec, mollis nibh. 
-        Proin vehicula accumsan quam vitae viverra. 
-        Sed scelerisque ultrices tellus, eu pretium magna accumsan vel. 
-        Quisque blandit placerat porta.
     </p>
 </div>
 
-<footer style="text-align: center; font-size: x-small;">
+<footer>
         Copyright ©
 </footer>
 

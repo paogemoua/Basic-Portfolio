@@ -6,7 +6,8 @@ body {
 }
 
 /* Styling for About Me */
-h2 {color:#4aaaa5;
+h2 {
+    color:#4aaaa5;
     font-family: 'Georgia', Times, "Times New Roman", serif;
     font-size: 25px;
 }
@@ -26,15 +27,15 @@ img {
     box-sizing: border-box;
 }
 
-/* Styling for About Me heading in box */
+/* Styling for About Me box */
 #aboutme {
-    position: relative;
+    position: fixed;
     left: 300px;
-    top: 50px;
+    top: 150px;
     border: none;
 }
 
-/* About Portfolio Contact heading bar */
+/* Paoge Moua & About Portfolio Contact heading bar */
 
 .header {
     background-color: #4aaaa5;
@@ -42,13 +43,15 @@ img {
     width: 250px;
     border: none;
     padding: 15px;
-    margin: 5px;
+    margin: 0px;
     height: 90px;
     font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-size: 25px;
     float: left;
     text-align: center;
-    position: relative;
-    left: 220px;
+    position: fixed;
+    top: 0%;
+    left: 350px;
     z-index: 5;
 }
 
@@ -70,7 +73,7 @@ li a {
     display: inline-block;
     color: #777777;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     font-family: 'Georgia', Times, "Times New Roman", serif;
 }
@@ -121,6 +124,15 @@ li a:hover {
     z-index: 1;
 }
 
+/* ADD POSITION FIXED */
 footer {
-    text-align: center; font-size: x-small;
+    color: white;
+    text-align: center; font-size: small;
+    position: fixed;
+    top: 96%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    z-index: 5;
 }

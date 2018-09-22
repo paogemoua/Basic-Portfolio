@@ -2,7 +2,7 @@
 body {
 	font-family: 'Arial', 'Helvetica Neue', 
     Helvetica, sans-serif;
-    background-image: url(concrete_seamless.png); 
+    background-image: url(../images/concrete_seamless.png); 
 }
 
 /* Styling for About Me */
@@ -42,7 +42,7 @@ p {
     border: none;
     background-color:#fff; color:#777777; 
     outline: 1px solid gray;
-    width: 1000px; height: 500px; padding: 25px; 
+    width: 1000px; height: 550px; padding: 25px; 
     margin: 50px; box-align: center"
 }
 
@@ -84,7 +84,7 @@ li a {
     display: inline-block;
     color: #777777;
     text-align: center;
-    padding: 0px 16px;
+    padding:  0px 14px 0px 16px;
     text-decoration: none;
     font-family: 'Georgia', Times, "Times New Roman", serif;
 }

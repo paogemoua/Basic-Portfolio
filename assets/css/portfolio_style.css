@@ -1,8 +1,8 @@
 /* Styling for entire page */
 body {
-	font-family: 'Arial', 'Helvetica Neue', 
+    font-family: 'Arial', 'Helvetica Neue', 
     Helvetica, sans-serif;
-    background-image: url(concrete_seamless.png); 
+    background-image: url(../images/concrete_seamless.png); 
 }
 
 /* Styling for Paoge Moua teal box */
@@ -112,7 +112,7 @@ li a:hover {
 }
 
 #leftborder {
-	border-left: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
 }
 
 /* Top & Bottom boxes across whole page */

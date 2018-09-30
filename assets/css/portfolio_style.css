@@ -170,6 +170,19 @@ li a:hover {
   vertical-align: middle;
 }
 
+.portfolioItem {
+    position: relative;
+    float: left;
+}
+
+.portfolioItem h2 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    background: #4aaaa5;
+}
+
 /* Styling for Footer */
 footer {
     color: white;
